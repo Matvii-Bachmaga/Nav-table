@@ -35,11 +35,6 @@ h1 {
     text-decoration: none;
 }
 
-.navigation a:hover {
-    background-color: #3f4852;
-    color: #fd8612;
-}
-
 .navigation li {
     list-style: none;
 }
@@ -82,9 +77,8 @@ ul:not(.open) >li:last-child >a {
     border-bottom: 1px solid #b9bdc1;
 }
 
-.row:not(:first-child):nth-child(2n)
-
 .navigation a:hover {
+    background-color: #3f4852;
     color: #fd8612;
 }
 
@@ -155,8 +149,6 @@ ul:not(.open) >li:last-child >a {
 
 .main-service {
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
 .main-service a {
@@ -260,16 +252,9 @@ ul ul li {
 .service {
     width: max-content;
     max-height: 170px;
-    background-color: #d2d4d5;
     flex-direction: column;
     flex-wrap: wrap;
 }   
-
-.service a {
-    color: #2a3644;
-    width: 210px;
-    border: none;
-}
 
 .service:hover,
 .service-li:hover .service{
@@ -278,6 +263,7 @@ ul ul li {
 
 .service li {
     border: 0.5px solid #b9bdc1;
+    border-left: none;
     width: unset;
 }
 
@@ -296,32 +282,12 @@ ul ul li {
     border-radius: 0 3px 0 0;
 }
 
-.service li:last-child a {
-    border-radius: 0;
-}
-
-.service li:hover {
-    border-color: #2a3644;
-}
-
-.service li:not(:nth-child(1n+5)) a {
-    border-left: none;
-}
-
-.service li:nth-child(1n+5) a {
-    border-right: none;
-}
-
-.service li:nth-child(4n) a {
+.service li:nth-child(5) a {
     border-bottom: none;
 }
 
-.service li:nth-child(4n+1) a {
-    border-top: none;
-}
-
-.open_8 a {
-    border: 1px solid #b9bdc1;
+.service li:last-child a {
+    border-radius: 0;
 }
 
 .open-1 {
@@ -339,8 +305,6 @@ li {
 }
 
 .open_6::before {
-    content: "";
-    position: absolute;
     top: 0;
     left: -5px;
     width: 5px;
@@ -358,8 +322,6 @@ li {
 }
 
 .open_7::before {
-    content: "";
-    position: absolute;
     top: 0;
     right: -5px;
     width: 5px;
@@ -377,10 +339,6 @@ h2 {
 
 thead {
     background-color: #2a3644;
-}
-
-thead th {
-    padding: 18px 25px;
 }
 
 td:nth-child(2) {
@@ -407,20 +365,17 @@ table {
 
 table th {
     border: 1px solid #3f4852;
+    padding: 18px 25px;
 }
 
 table td {
-    padding: 18px 24px;
+    padding: 18px 25px;
     border: 1px solid #c0c1c2;
     color: #2a3644;
 }
 
 .info {
     background-color: #f2f2f2;
-}
-
-.info td {
-    color: #2a3644;
 }
 
 .info:hover {
@@ -531,7 +486,6 @@ td:nth-child(1n+3) {
 }
 
 p:first-child {
-    color: #fff;
     border-left: none;
 }
 

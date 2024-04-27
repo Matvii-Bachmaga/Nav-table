@@ -113,6 +113,12 @@ ul:not(.open) >li:last-child >a {
     flex-grow: 1;
 }
 
+.machinery-thinks .hover:hover>a {
+    background-color: #3f4852;
+    color: #fd8612;
+    transition: .5s;
+}
+
 .main {
     display: flex;
     justify-content: space-between;
@@ -137,7 +143,7 @@ ul:not(.open) >li:last-child >a {
     width: 18px;
     height: 13px;
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 5px;
     background: url(../img_/sprite.png);
     transform: translateY(-50%);
@@ -153,7 +159,7 @@ ul:not(.open) >li:last-child >a {
 
 .main-service a {
     border-right: 1px solid #3f4852;
-    padding: 11.5px 30px;
+    padding: 15px 30px;
 }
 
 .networks {
@@ -368,6 +374,26 @@ table th {
     padding: 18px 25px;
 }
 
+table .nomer {
+    border-top: transparent;
+    border-left: transparent;
+    border-radius: 3px 0 0 0;
+}
+
+table .name {
+    border-top: transparent;
+}
+
+table .result {
+    border-top: transparent;
+    border-right: transparent;
+    border-radius: 0 3px 0 0 ;
+}
+
+table .text-number {
+    border-right: transparent;
+}
+
 table td {
     padding: 18px 25px;
     border: 1px solid #c0c1c2;
@@ -390,10 +416,6 @@ table td {
     background-color: #c0c1c2;
 }
 
-tbody tr:hover td {
-    border-color: transparent;
-}
-
 .numbers {
     text-align: center;
 }
@@ -408,7 +430,8 @@ td:last-child {
 
 tr:last-child td,
 .row:last-child p {
-    border-bottom: none;
+    border-bottom: transparent;
+    border-radius: 0 0 3px 3px
 }
 
 h3 {
@@ -431,6 +454,20 @@ h3 {
     margin-bottom: 50px;
 }
 
+.table-style .row:first-child .cell-number {
+    text-align: center;
+    border-left: transparent;
+    border-radius: 3px 0 0 0;
+    border-top: transparent;
+}
+
+.table-style .row:first-child .cell-center {
+    text-align: center;
+    border-right: transparent;
+    border-radius: 0 3px 0 0;
+    border-top: transparent;
+}
+
 .center {
     text-align: center;
 }
@@ -442,6 +479,7 @@ h3 {
 .table-style .row:first-child p {
     color: #fff;
     border: 1px solid #3f4852;
+    border-top: transparent;
 }
 
 .row .cell {
@@ -477,7 +515,6 @@ td:nth-child(1n+3) {
 }
 
 .table-style .row:not(:first-child):hover p {
-    border-color: transparent;
     background-color: #c0c1c2;
 }
 
